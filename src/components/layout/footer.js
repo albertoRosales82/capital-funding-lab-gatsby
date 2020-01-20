@@ -1,6 +1,6 @@
 import React from "react";
-import './../../styles/general.css';
-import './footer.css';
+import './../../styles/general.scss';
+import './footer.scss';
 
 const STYLES = {
   div0:{

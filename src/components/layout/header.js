@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import { ButtonToolbar, Button } from "reactstrap";
 
 
-import './header.css';
-import './../../styles/general';
+import './header.scss';
+import './../../styles/general.scss';
 
 function Header() {
   return (
@@ -13,7 +13,7 @@ function Header() {
     <nav>
       <NavLink exact activeClassName="active" to="index">
       {/* <img id="header-logo" width="80" src="//www.capitalfundinglabs.com/img/cfl-logo.png" onClick="trackClick('Header - logo');" /> */}
-      <img id="header-logo" width="80" src="//www.capitalfundinglabs.com/img/cfl-logo.png"/>
+      <img id="header-logo" width="80" src="//www.capitalfundinglabs.com/img/cfl-logo.png" alt="CFL Logo"/>
       </NavLink>
       </nav>
 
