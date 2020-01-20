@@ -1,0 +1,59 @@
+/* box-bg js-dentaku-requirement-personal requirements-content requirements-content-personal fix-box-position */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    background-color: #1F4F5C;
+    padding-top: 2rem;
+}
+
+.column1 {
+    background-color: #efefef;
+    height: 200px;
+    width: 33%;
+    padding: 0 1rem;
+}
+
+.column2 {
+    background-color: #efefef;
+    height: 200px;
+    width: 33%;
+}
+
+.example-row {
+    width:100%;
+}
+
+.col1 {
+    display: inline-block;
+    text-align: right;
+    width: 60%;
+}
+
+ul.imagechk {
+    list-style-image: url('../images/checkmark.png');
+}
+
+.col2 {
+    display: inline-block;
+    width: 35%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .flex-container {
+        display: block;
+        width: 100%
+    }
+
+    .column1 {
+        width: 100%;
+    }
+    .column2 {
+        width: 100%;
+    }
+
+}
