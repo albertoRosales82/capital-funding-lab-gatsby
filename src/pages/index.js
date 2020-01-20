@@ -5,14 +5,14 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import Button from 'react-bootstrap/Button'
 import ReactPlayer from 'react-player'
 
-import './general.css';
+import '../styles/general.css';
 import './home.css';
 import './invest.css'
 import './requirements.css'
-import Header from "./header";
+import Header from "../components/layout/header";
 import Calculator from "./calculator";
 import Invest from "./investmen";
-import Footer from "./footer";
+import Footer from "./../components/layout/footer";
 
 
 function routing (){

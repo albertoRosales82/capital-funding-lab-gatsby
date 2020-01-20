@@ -4,7 +4,7 @@ import { ButtonToolbar, Button } from "reactstrap";
 
 
 import './header.css';
-import './general.css';
+import './../../styles/general';
 
 function Header() {
   return (
