@@ -1,0 +1,31 @@
+@import './../../styles/mixin.scss';
+.floating-block {
+    background-color: rgba(255,255,255,.8);
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px 40px 20px 40px;
+    box-shadow: 0 5px 50px 10px rgba(0,0,0,0.2);
+    min-height: 350px;
+    position: relative;
+    width: 450px;
+    z-index: 3;
+    ul {
+        padding-left: 0;
+    }
+    li {
+        list-style: none;
+        padding: 7px 0;
+        font-size: 17px;
+        position: relative;
+        margin-left: 40px;
+    }
+    li::before {
+        content: "\2713";
+        color: $color-dark-green;
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        left: -40px;
+        top: 2px;
+    }
+} 

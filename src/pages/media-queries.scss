@@ -7,15 +7,8 @@
 }
 @media (max-width: 1100px) {
     /* GENERAL */
-    #app {
-        /*width: calc(100% + 350px);*/
-        /*margin-left: -350px;*/
-    }
     #app.menu-open {
         margin-left: 0px;
-    }
-    #app-sidebar {
-        
     }
     #menu-background.show {
         display: block;

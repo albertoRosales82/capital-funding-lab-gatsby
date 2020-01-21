@@ -1,0 +1,78 @@
+@import './../../styles/mixin.scss';
+
+.header-wrapper {
+    box-shadow: 0 0 0 1px rgba(0,0,0,.05), 0 0 5px 0 rgba(0,0,0,.1);
+    background-color: $color-white;
+}
+.logo{
+    @include fluid-width($min_width, $max_width, 50px, 100px);
+}
+
+
+/* HEADER BUTTONS ON THE RIGHT */
+
+.header-button {
+    display: block;
+    width: 100px;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+    padding: 10px 13px;
+    height: 37px;
+}
+
+.header-flag {
+    width: 40px;
+    height: 30px;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+
+/* SELECTOR COMPONENT */
+.selector {
+    width: auto;
+    display: inline-block;
+    height: 37px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: height .5s;
+}
+.selector:hover {
+    outline: 1px solid #ccc;
+}
+.selector-options-wrapper {
+    background-color: white;
+    float: left;
+    margin-top: 0;
+    transition: all .5s;
+}
+.selector-option:hover {
+    background-color: #E6E6E6;
+}
+.selector-option {
+    display: block;
+    float: left;
+    clear: left;
+    padding: 0px 20px;
+    line-height: 37px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all .1s;
+    color: #888;
+}
+.selector-option:hover {
+    color: black;
+}
+
+.content-block-content .selector-option:hover {
+    background-color: #4D5760;
+    color: white;
+}
+.content-block-content .selector-option {
+    background-color: #E6E6E6;
+}
+/* SELECTOR COMPONENT END */
+

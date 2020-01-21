@@ -27,11 +27,6 @@ body {
     letter-spacing: 0.02em;
     width: 100%;
 }
-/*
-.black {
-    font-family: "Helvetica Neue Bold", "Calibri", Roboto, sans-serif;
-}*/
-
 #app {
     overflow-x: hidden;
     display: flex;
@@ -98,99 +93,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-#sidebar-content {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-#sidebar-content ul {
-    list-style: none;
-    padding-left: 0;
-}
-#sidebar-content ul li.separator {
-    height: 10px;
-}
-#sidebar-content ul li.separator:hover {
-    background-color: #333d46;
-    cursor: auto;
-}
-#sidebar-content ul li {
-    font-size: 16px;
-    color: #bbb;
-    cursor: pointer;
-    height: 60px;
-    line-height: 60px;
-    width: 100%;
-}
-#sidebar-content ul li:hover {
-    /*background-color: rgba(255,255,255,0.8);*/
-    /*color: #333d46;*/
-}
-#sidebar-content ul li.sidebar-current {
-    background-color: white;
-    color: #333d46;
-}
-.sidemenu-title {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.sidemenu-option {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-decoration: none;
-    color: #bbb;
-    padding-left: 30px;
-}
-.sidemenu-option:hover {
-    background-color: rgba(255,255,255,0.8);
-    color: #333d46;
-}
-#sidemenu-buttons {
-    padding-left: 20px;
-}
-#sidemenu-buttons #header-button1 {
-    outline-color: #888;
-    color: #aaa;
-}
-#sidemenu-buttons #header-button2 {
-    background-color: white;
-    color: #333d46;
-}
-#sidemenu-flags .countries {
-    font-size: 15px;
-    width: 50%;
-}
-#sidemenu-flags .flag {
-    width: 10px;
-    height: 10px
-}
-#sidemenu-flags a {
-    padding-left: 30px;
-    line-height: 33px;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-}
-
-header,
-.block {
-    background-color: white;
-    /*background-color: #333d46;*/
-}
-header,
-footer,
-#app-content > div > div {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
-    box-sizing: content-box;
-}
-
 
 #app-content > div.content-area {
     padding: 40px 0;
 }
-
 
 .button {
     background-color: rgb(49,180,184);
@@ -343,10 +249,6 @@ footer,
     width: 25px;
     height: 25px;
 }
-/* .risk-warning {
-    bottom: 
-} */
-
 .cover-notice {
     position: fixed;
     top: 0;

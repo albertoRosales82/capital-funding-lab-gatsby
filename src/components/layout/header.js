@@ -1,42 +1,47 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import { ButtonToolbar, Button } from "reactstrap";
+import React, { useState } from "react"
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+} from "reactstrap"
+import Button from "./../elements/button"
+import styles from "./header.module.scss"
+import "./../../styles/general.scss"
 
+const Header = props => {
+  const [isOpen, setIsOpen] = useState(false)
 
-import './header.scss';
-import './../../styles/general.scss';
+  const toggle = () => setIsOpen(!isOpen)
 
-function Header() {
   return (
-    <div id="header-wrapper">
-    <div id="menu-button" ></div>
-    <nav>
-      <NavLink exact activeClassName="active" to="index">
-      {/* <img id="header-logo" width="80" src="//www.capitalfundinglabs.com/img/cfl-logo.png" onClick="trackClick('Header - logo');" /> */}
-      <img id="header-logo" width="80" src="//www.capitalfundinglabs.com/img/cfl-logo.png" alt="CFL Logo"/>
-      </NavLink>
-      </nav>
-
-    {/* <div id="header-menu">
-        <div className="menu-option">
-        </div><div className="menu-option">
-        </div><div className="menu-option">
-        </div>
-    </div> */}
-
-    <div id="header-buttons">
-
-  <ButtonToolbar style={{padding:'22px 0 0 0'}}>
-    <Button className="button header-button" style={{border:'1px solid'}} id="header-button1" variant="outline-primary">Registrarse</Button>
-    <Button className="button header-button" style={{border:'0px solid'}} id="header-button2" variant="Entrar">Entrar</Button>
-  </ButtonToolbar>
-
-       {/* <a class="button header-button" id="header-button1" 
-        href="https://registration.capitalfundinglabs.com/account/register">Registrarse</a>
-        <a class="button header-button" id="header-button2" 
-        href="https://registration.capitalfundinglabs.com/">Entrar</a> */}
+    <div className={styles.headerWrapper}>
+      <Navbar color="light" light expand="md">
+        <NavbarBrand href="/">
+          <img
+            id="header-logo"
+            width="80"
+            src="//www.capitalfundinglabs.com/img/cfl-logo-2.png"
+            alt="CFL Logo"
+            className={styles.logo+ " m-0 p-0 ml-5"}
+          />
+        </NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar className="d-flex justify-content-end">
+          <Nav className="row " navbar>
+            <NavItem className="col-6 px-4">
+              <Button color="whiteNav" text="Registrarse" />
+            </NavItem>
+            <NavItem className="col-6 px-4">
+              <Button color="greennav" text="Entrar" />
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
     </div>
-</div>
-  );
+  )
 }
-export default Header;
+
+export default Header

@@ -1,0 +1,324 @@
+@import './../../styles/mixin.scss';
+
+.disabled{
+    cursor: not-allowed!important;
+}
+
+.white{
+    color: $color-white;
+    border: 1px solid $color-white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 0px;
+    letter-spacing: 2px;
+    @include font-size(13px);
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-white;
+        color: $color-dark;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-white;
+        color: $color-dark;
+        border: 1px solid $color-dark;
+    }
+}
+.whiteNav{
+    color: $color-light-grey;
+    border: 1px solid $color-light-grey;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s all;
+    border-radius: 0px !important;
+    letter-spacing: 2px;
+    font-family: 'DM Sans', sans-serif;
+    @include font-size(13px);
+    &.button{
+        background-color: transparent;
+        color: $color-grey !important;
+        border: 1px solid $color-grey !important;
+    }
+    &.disabled{
+        background-color: transparent;
+        color: $color-grey !important;
+        cursor: not-allowed;
+        border: 1px solid $color-grey!important;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-grey!important;
+        color: $color-white !important;
+        border: 1px solid $color-grey!important;
+        letter-spacing: 4px;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-grey !important;
+        color: $color-white !important;
+        border: 1px solid $color-grey !important;
+    }
+    &:active{
+        text-decoration: none!important;
+        background-color: $color-grey !important;
+        color: $color-white !important;
+        border: 1px solid $color-grey !important;
+    }
+}
+
+.blue{
+    color: $color-blue;
+    border: 1px solid $color-blue;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-family: 'DM Sans', sans-serif;
+    @include font-size(13px);
+    &.button{
+        background-color: transparent;
+        color: $color-blue !important;
+        border: 1px solid $color-blue !important;
+    }
+    &.disabled{
+        background-color: transparent;
+        color: $color-blue !important;
+        cursor: not-allowed;
+        border: 1px solid $color-blue !important;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+    &:active{
+        text-decoration: none!important;
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+}
+.blueContent{
+    color: $color-white;
+    border: 1px solid $color-blue;
+    background-color: $color-blue;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-family: 'DM Sans', sans-serif;
+    @include font-size(13px);
+    &.button{
+        background-color: $color-blue;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+    &.disabled{
+        background-color: transparent;
+        color: $color-blue !important;
+        cursor: not-allowed;
+        border: 1px solid $color-blue !important;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-dark-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-dark-blue !important;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-dark-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-dark-blue !important;
+    }
+    &:active{
+        text-decoration: none!important;
+        background-color: $color-dark-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-dark-blue !important;
+    }
+}
+
+.greenlight{
+    color: $color-white;
+    border: 1px solid $color-light-green;
+    background-color: $color-light-green;
+    cursor: pointer;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s all;
+    border-radius: 0px !important;
+    letter-spacing: 2px;
+    font-family: 'DM Sans', sans-serif;
+    @include font-size(13px);
+    &.button{
+        background-color: $color-light-green;
+        color: $color-white !important;
+        border: 1px solid $color-light-green !important;
+    }
+    &.disabled{
+        background-color: transparent;
+        color: $color-light-green !important;
+        cursor: not-allowed;
+        border: 1px solid $color-light-green !important;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-dark-green!important;
+        color: $color-white !important;
+        border: 1px solid $color-dark-green !important;
+        letter-spacing: 4px;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-light-green !important;
+        color: $color-white !important;
+        border: 1px solid $color-light-green !important;
+    }
+    &:active{
+        text-decoration: none!important;
+        background-color: $color-light-green !important;
+        color: $color-white !important;
+        border: 1px solid $color-light-green !important;
+    }
+}
+.greennav{
+    color: $color-white;
+    border: 1px solid $color-green-nav;
+    background-color: $color-green-nav;
+    cursor: pointer;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s all;
+    border-radius: 0px !important;
+    letter-spacing: 2px;
+    font-family: 'DM Sans', sans-serif;
+    @include font-size(13px);
+    &.button{
+        background-color: $color-green-nav;
+        color: $color-white !important;
+        border: 1px solid $color-green-nav !important;
+    }
+    &.disabled{
+        background-color: transparent;
+        color: $color-green-nav !important;
+        cursor: not-allowed;
+        border: 1px solid $color-green-nav !important;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-light-green !important;
+        color: $color-white !important;
+        border: 1px solid $color-light-green !important;
+        letter-spacing: 4px;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-light-green !important;
+        color: $color-white !important;
+        border: 1px solid $color-light-green !important;
+    }
+    &:active{
+        text-decoration: none!important;
+        background-color: $color-light-green !important;
+        color: $color-white !important;
+        border: 1px solid $color-light-green !important;
+    }
+}
+.green{
+    color: $color-green;
+    border: 1px solid $color-green;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 0px;
+    letter-spacing: 2px;
+    @include font-size(13px);
+    &.button{
+        background-color: transparent;
+    }
+    &.disabled{
+        background-color: transparent;
+        cursor: not-allowed;
+        color: $color-green;
+        border: 1px solid $color-green;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-green;
+        color: $color-white;
+        border: 1px solid $color-green;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-green;
+        color: $color-white;
+        border: 1px solid $color-green;
+    }
+}
+
+.grey{
+    color: $color-grey;
+    border: 1px solid $color-grey;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 0px;
+    letter-spacing: 2px;
+    @include font-size(13px);
+    &.button{
+        background-color: transparent;
+    }
+    &.disabled{
+        background-color: transparent;
+        cursor: not-allowed;
+        color: $color-grey;
+        border: 1px solid $color-grey;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color:$color-grey;
+        color: $color-white;
+        border: 1px solid $color-grey;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-grey;
+        color: $color-white;
+        border: 1px solid $color-grey;
+    }
+}
