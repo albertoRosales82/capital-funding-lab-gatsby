@@ -12,6 +12,7 @@ import Calculator from "./calculator"
 import Invest from "./investmen"
 import Layout from "./../components/layout/layout"
 import FadeInSection from "./../components/elements/fadeInSection"
+import Button from "./../components/elements/button"
 
 function routing() {
   return (
@@ -78,119 +79,43 @@ function routing() {
               </Col>
             </Row>
           </section>
-          {/**The end of the block div */}
-          <div className="block">
-            <div>
-              <div id="home-block1-text">
-                <div className="center">
-                  <h2>EL COMPROMISO CFL</h2>
-                </div>
-                <div className="quarter-block">
-                  <svg
-                    className={styles.checkmark}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 52 52"
-                  >
-                    <circle
-                      className={styles.checkmark__circle}
-                      cx="26"
-                      cy="26"
-                      r="25"
-                      fill="rgb(26,114,114)"
-                    />
-                    <path
-                      className={styles.checkmark__check}
-                      fill="rgb(26,114,114)"
-                      d="M14.1 27.2l7.1 7.2 16.7-16.8"
-                    />
-                  </svg>
 
-                  <div className="quarter-block-text">
-                    Diseñado para ser seguro, fácil de usar y justo{" "}
-                  </div>
-                </div>
-                <div className="quarter-block">
-                  <svg
-                    class="checkmark"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 52 52"
-                  >
-                    <circle
-                      class="checkmark__circle"
-                      cx="26"
-                      cy="26"
-                      r="25"
-                      fill="none"
-                    />
-                    <path
-                      class="checkmark__check"
-                      fill="none"
-                      d="M14.1 27.2l7.1 7.2 16.7-16.8"
-                    />
-                  </svg>
-
-                  <div className="quarter-block-text">
-                    Nos proponemos ser transparentes y mantener bajos costes{" "}
-                  </div>
-                </div>
-                <div className="quarter-block">
-                  <svg
-                    class="checkmark"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 52 52"
-                  >
-                    <circle
-                      class="checkmark__circle"
-                      cx="26"
-                      cy="26"
-                      r="25"
-                      fill="none"
-                    />
-                    <path
-                      class="checkmark__check"
-                      fill="none"
-                      d="M14.1 27.2l7.1 7.2 16.7-16.8"
-                    />
-                  </svg>
-                  <div className="quarter-block-text">
-                    Creamos un portafolio diversificado de préstamos para ti{" "}
-                  </div>
-                </div>
-                <div className="quarter-block">
-                  <svg
-                    class="checkmark"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 52 52"
-                  >
-                    <circle
-                      class="checkmark__circle"
-                      cx="26"
-                      cy="26"
-                      r="25"
-                      fill="none"
-                    />
-                    <path
-                      class="checkmark__check"
-                      fill="none"
-                      d="M14.1 27.2l7.1 7.2 16.7-16.8"
-                    />
-                  </svg>
-                  <div className="quarter-block-text">
-                    Invierte para la oportunidad de ganar interés sobre sus
-                    ahorros.{" "}
-                  </div>
-                </div>
-                <div></div>
-                <a
-                  href="https://registration.capitalfundinglabs.com/account/register?type=lender"
-                  className="button button-clear"
-                  onClick="trackClick('HAZTE CLIENTE button')"
-                >
-                  &nbsp;HAZTE CLIENTE 〉
-                </a>
-              </div>
+          <section>
+            <div className="d-flex justify-content-center py-4">
+              <h2 className={styles.headersubtittle + " mx-auto text-center"}>
+                EL COMPROMISO CFL
+              </h2>
             </div>
-          </div>
+            <div className="container d-flex">
+              <Row>
+                <CardHome
+                  tipo="quarter"
+                  text="Diseñado para ser seguro, fácil de usar y justo."
+                />
+                <CardHome
+                  tipo="quarter"
+                  text="Nos proponemos ser transparentes y mantener bajos costes."
+                />
+                <CardHome
+                  tipo="quarter"
+                  text="Invierte para la oportunidad de ganar interés sobre sus
+                    ahorros."
+                />
+                <CardHome
+                  tipo="quarter"
+                  text="Creamos un portafolio diversificado de préstamos para ti."
+                />
+              </Row>
+            </div>
+            <div className="d-flex justify-content-center py-4">
+              <Button
+                color="grey"
+                text="HAZTE CLIENTE 〉"
+                url="https://registration.capitalfundinglabs.com/account/register?type=lender"
+              />
+            </div>
+          </section>
+
           {/**product-content-area */}
           <div
             className="content-area"
