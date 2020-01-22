@@ -37,10 +37,21 @@
 
     vertical-align: top;
 }
+.quarter-block-two {
+  display: inline-block;
+  text-align: center;
+  background-color: #ddd;
+  width: 290px;
+
+  vertical-align: top;
+}
 .quarter-block-text {
     margin: 20px auto;
     font-size: 17px;
     color: #666;
+}
+.imgofrecemos{
+  @include fluid-width($min_width, $max_width, 100px, 300px);
 }
 .checkmark__circle {
     stroke-dasharray: 166;
@@ -69,6 +80,91 @@
     stroke-dashoffset: 48;
     animation: stroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) .8s forwards paused;
   }
+  .product {
+    display: inline-block;
+    text-align: center;
+    max-width: 280px;
+    padding: 20px 20px 0px 20px;
+    margin: 10px;
+    display: flex;
+    color: #222;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    background-color: #eee;
+    flex-direction: column;
+}
+.product-name {
+  display: inline;
+  color: #222;
+  position: relative;
+}
+.product-name > span {
+  background-color: #eee;
+  z-index: 1;
+  position: relative;
+  padding: 0 10px;
+}
+.product-name span span {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: -1;
+  font-weight: bold;
+}
+.product-name::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.2);
+  left:0;
+  top: 50%;
+  z-index: 0;
+}
+.invertittle{
+  border-bottom: 3px solid $color-grey;
+}
+.invertext{
+  font-style: italic;
+  text-align: left;
+  @include fluid-type($min_width, $max_width, 15px, 20px);
+}
+.product-rate {
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(49,180,184);
+}
+.progress-bar-wrapper {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 10px;
+  position: relative;
+}
+.product-rate span.rate {
+  font-size: 80px;
+  font-weight: bold;
+}
+#social .product-rate {
+  background-color: rgb(49,180,184);
+  color: white;
+}
+#social .product-rate span {
+  font-size: 30px;
+  color: white;
+}
+.product:nth-child(1) .progress-bar-cover  { width: calc(100% - 100%); }
+.product:nth-child(2) .progress-bar-cover  { width: calc(100% - 100%); }
+.progress-bar-empty .progress-bar-cover {
+    width: 100% !important;
+}
   @keyframes stroke {
     100% {
       stroke-dashoffset: 0;

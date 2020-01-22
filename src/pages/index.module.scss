@@ -18,13 +18,27 @@ body {
 }
 .headersubtittle{
   @include fluid-type($min_width, $max_width, 18px, 100px);
-  font-size: 40px;
   font-weight: normal;
   margin-top: 0;
   letter-spacing: 0px;
   line-height: 40px;
 }
-
+.subtittle{
+  @include fluid-type($min_width, $max_width, 18px, 100px);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.subtittle-white{
+  @include fluid-type($min_width, $max_width, 18px, 100px);
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: $color-white;
+}
+.sectionthree{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

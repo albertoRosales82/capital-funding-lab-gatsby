@@ -22,9 +22,9 @@ function routing() {
           <section id="hero" className="block">
             <div id="hero-vid">
               <ReactPlayer
+                className={styles.video}
                 url="/video/background-mexico-skyline.mp4"
                 playing
-                className={styles.video}
               />
             </div>
             <FadeInSection>
@@ -82,7 +82,7 @@ function routing() {
 
           <section>
             <div className="d-flex justify-content-center py-4">
-              <h2 className={styles.headersubtittle + " mx-auto text-center"}>
+              <h2 className={styles.subtittle + " mx-auto text-center"}>
                 EL COMPROMISO CFL
               </h2>
             </div>
@@ -115,218 +115,92 @@ function routing() {
               />
             </div>
           </section>
-
+          <section>
+            <div
+              className="content-area py-4"
+              id="product-content-area"
+              style={{ backgroundColor: "rgb(31,79,92)" }}
+            >
+              <div id="product-grid">
+                <h2 className={styles.subtittleWhite}>
+                  ¿Que ofrecemos a nuestros inversionistas?
+                </h2>
+              </div>
+              <div className="container-fluid d-flex justify-content-center py-4">
+                <CardHome
+                  tipo="inversionistas"
+                  tittlecard="Cuenta"
+                  number="2.5"
+                  title="TNA"
+                  text="Sin plazo mínimo."
+                  text2="La inversión se reinvierte de forma automática para maximizar
+                  su retorno."
+                />
+                <CardHome
+                  tipo="inversionistas"
+                  tittlecard="Uno"
+                  number="3.5"
+                  title="TNA"
+                  text="Plazo de 1 año."
+                  text2="La inversión se reinvierte de forma automática para maximizar
+                  su retorno."
+                />
+                <CardHome
+                  tipo="inversionistas"
+                  tittlecard="Mercado"
+                  number="6.0"
+                  title="TNA"
+                  text="Plazo de 3 años."
+                  text2="La inversión se reinvierte de forma automática para maximizar
+                  su retorno."
+                />
+                <CardHome
+                  tipo="inversionistastext"
+                  tittlecard="¿Te gustaría conocer más?"
+                  title="Email: info@capitalfundinglab.com"
+                  text="Un profesional de CFL estará encantado de responder cualquier
+                  pregunta que pueda tener sobre nuestras ofertas y productos."
+                />
+              </div>
+            </div>
+          </section>
           {/**product-content-area */}
-          <div
-            className="content-area"
-            id="product-content-area"
-            style={{ backgroundColor: "rgb(31,79,92)" }}
-          >
-            <div id="product-grid">
-              <h2
-                style={{
-                  color: "white",
-                  display: "block",
-                  width: "100%",
-                  textTransform: "none",
-                  marginTop: "0",
-                  marginBottom: "70px",
-                }}
-              >
-                ¿Que ofrecemos a nuestros inversionistas?
+          <section>
+            <div className="d-flex justify-content-center py-4">
+              <h2 className={styles.subtittle + " mx-auto text-center"}>
+                ¿Qué ofrecemos a nuestros solicitantes?
               </h2>
-
-              <div className="product" id="cuenta-mx">
-                <div className="product-name">
-                  <span className="product-name-wrapper">
-                    <span>Cuenta</span>CFL
-                  </span>
-                </div>
-                <div className="product-rate" style={{ position: "relative" }}>
-                  <span className="rate">2.5</span>
-                  <span style={{ position: "absolute", bottom: "16px" }}>
-                    % TNA*
-                  </span>
-                </div>
-                <div className="progress-bar-wrapper">
-                  <div className="progress-bar"></div>
-                  <div className="progress-bar-cover"></div>
-                </div>
-                <div className="product-description">TNA </div>
-                <div
-                  style={{
-                    fontStyle: "italic",
-                    marginTop: "20px",
-                    fontSize: "14px",
-                    textAlign: "left",
-                  }}
-                >
-                  Sin plazo mínimo.
-                  <br />
-                  La inversión se reinvierte de forma automática para maximizar
-                  su retorno.
-                </div>
-              </div>
-
-              <div className="product" id="uno-mx">
-                <div className="product-name">
-                  <span className="product-name-wrapper">
-                    <span>Uno</span>CFL
-                  </span>
-                </div>
-                <div className="product-rate" style={{ position: "relative" }}>
-                  <span className="rate">3.5</span>
-                  <span style={{ position: "absolute", bottom: "16px" }}>
-                    % TNA*
-                  </span>
-                </div>
-                <div className="progress-bar-wrapper">
-                  <div className="progress-bar"></div>
-                  <div className="progress-bar-cover"></div>
-                </div>
-                <div className="product-description"></div>
-                <div
-                  style={{
-                    fontStyle: "italic",
-                    marginTop: "20px",
-                    fontSize: "14px",
-                    textAlign: "left",
-                  }}
-                >
-                  Plazo de 1 año
-                  <br />
-                  La inversión se reinvierte de forma automática para maximizar
-                  su retorno{" "}
-                </div>
-              </div>
-
-              <div className="product" id="product-uk">
-                <div className="product-name">
-                  <span className="product-name-wrapper">
-                    <span>Mercado</span>CFL
-                  </span>
-                </div>
-                <div className="product-rate" style={{ position: "relative" }}>
-                  <span className="rate">6.0</span>
-                  <span style={{ position: "absolute", bottom: "16px" }}>
-                    % TNA*
-                  </span>
-                </div>
-                <div className="progress-bar-wrapper">
-                  <div className="progress-bar"></div>
-                  <div className="progress-bar-cover"></div>
-                </div>
-                <div className="product-description"></div>
-                <div
-                  style={{
-                    fontStyle: "italic",
-                    marginTop: "20px",
-                    fontSize: "14px",
-                    textAlign: "left",
-                  }}
-                >
-                  Plazo de 3 años.
-                  <br />
-                  La inversión se reinvierte de forma automática para maximizar
-                  su retorno.
-                </div>
-              </div>
-
-              <div className="center product" id="product-end-talk">
-                <div
-                  className="product-name"
-                  style={{
-                    width: "100%",
-                    display: "inline-block",
-                    marginTop: "3px",
-                  }}
-                >
-                  <span className="product-name-wrapper">
-                    ¿Te gustaría conocer más?
-                  </span>
-                </div>
-                <div
-                  className="product-rate"
-                  style={{
-                    fontSize: "16px",
-                    textAlign: "left",
-                    padding: "10px 10px",
-                    marginTop: "23px",
-                    height: "120px",
-                  }}
-                >
-                  Un profesional de CFL estará encantado de responder cualquier
-                  pregunta que pueda tener sobre nuestras ofertas y productos.
-                </div>
-                <div className="progress-bar-wrapper">
-                  <div className="progress-bar"></div>
-                  <div className="progress-bar-cover"></div>
-                </div>
-                <div
-                  className="product-description"
-                  style={{ fontSize: "16px", textAlign: "left" }}
-                >
-                  <b>Email:</b> info@capitalfundinglab.com{" "}
-                </div>
-              </div>
             </div>
-          </div>
-          <div className="block">
-            <div>
-              <div id="home-block1-text">
-                <div className="center">
-                  <h2 style={{ textTransform: "none" }}>
-                    ¿Qué ofrecemos a nuestros solicitantes?
-                  </h2>
-                </div>
-                <div className="quarter-block">
-                  <img
-                    src="/images/money.png"
-                    alt="money"
-                    width="60"
-                    height="60"
-                  />
-                  <div className="quarter-block-text">
-                    Liquidez
-                    <br />
-                    50,000 UDIs
-                    <br />
-                    Plazo de 12-120 meses
-                  </div>
-                </div>
-                <div className="quarter-block">
-                  <img
-                    src="/images/industry.png"
-                    alt="industry"
-                    width="60"
-                    height="60"
-                  />
-                  <div className="quarter-block-text">
-                    Liquidez empresas
-                    <br />
-                    1,670,000 UDIs
-                    <br />
-                    Plazo de 12-120 meses
-                  </div>
-                </div>
-                <div className="quarter-block">
-                  <img
-                    src="/images/home.png"
-                    alt="home"
-                    width="60"
-                    height="60"
-                  />
-                  <div className="quarter-block-text">
-                    Hogar
-                    <br />
-                    50,000 UDIs
-                    <br />
-                    Plazo de 12-240 meses
-                  </div>
-                </div>
-              </div>
+            <div className="container d-flex justify-content-center mx-auto py-4">
+              <Row clasName={styles.sectionthree}>
+                <CardHome
+                  tipo="ofrecemos"
+                  src="/images/money.png"
+                  alt="money"
+                  text="Liquidez"
+                  text2="50,000 UDIs"
+                  text3="Plazo de 12-120 meses"
+                />
+                <CardHome
+                  tipo="ofrecemos"
+                  src="/images/industry.png"
+                  alt="industry"
+                  text="Liquidez empresas"
+                  text2="1,670,000 UDIs"
+                  text3="Plazo de 12-120 meses"
+                />
+                <CardHome
+                  tipo="ofrecemos"
+                  src="/images/home.png"
+                  alt="home"
+                  text="Hogar"
+                  text2="50,000 UDIs"
+                  text3="Plazo de 12-240 meses"
+                />
+              </Row>
             </div>
-          </div>
+          </section>
+
           <div className="flex-container">
             <div className="column1 tableShadow">
               <h4 className="fix-h4 media-heading semi-bold">
